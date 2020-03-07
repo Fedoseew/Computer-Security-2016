@@ -13,4 +13,9 @@ def convertText(text):
             s = 'Е'
         if s in abc:
             data2.append(s)
-    print(''.join(data2))
+    with open('text3.txt', 'x', encoding='UTF-8') as f:
+        f.write(''.join(data2))
+    # print(''.join(data2))
+
+
+convertText(data2)
