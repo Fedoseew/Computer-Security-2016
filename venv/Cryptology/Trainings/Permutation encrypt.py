@@ -18,5 +18,4 @@ def encrypt(text, permutation):
         string = [text[i + j] for j in range(blockSize)]
         for j in range(blockSize):
             text[i + j] = string[permutation[j]]
-
     return
